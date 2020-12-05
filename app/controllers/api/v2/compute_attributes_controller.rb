@@ -17,7 +17,7 @@ module Api
       api :GET, "/compute_profiles/:compute_profile_id/compute_resources/:compute_resource_id/compute_attributes/", N_("List of compute attributes for provided compute profile and compute resource")
       api :GET, "/compute_resources/:compute_resource_id/compute_attributes/", N_("List of compute attributes for compute resource")
       api :GET, "/compute_profiles/:compute_profile_id/compute_attributes/", N_("List of compute attributes for compute profile")
-      api :GET, "/compute_attributes/:id", N_("List of compute attributes")
+      api :GET, "/compute_attributes/", N_("List of compute attributes")
       param :compute_profile_id, String, :desc => N_("ID of compute profile")
       param :compute_resource_id, String, :desc => N_("ID of compute_resource")
       param_group :search_and_pagination, ::Api::V2::BaseController
